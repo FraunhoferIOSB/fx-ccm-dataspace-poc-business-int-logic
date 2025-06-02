@@ -1,1 +1,0 @@
-# folder to host files for WITTENSTEIN/Trumpf demo

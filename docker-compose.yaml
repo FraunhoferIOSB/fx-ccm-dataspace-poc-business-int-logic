@@ -1,0 +1,22 @@
+services:
+  Data-Source:
+    image: data-source-image
+    container_name: MX-Adapter-Data-Source
+    restart: always
+    ports:
+      - 8222:80
+    networks:
+      - MX-Adapter-network
+    volumes: 
+      - Data-Source-volume:/app/
+
+networks:
+  MX-Adapter-network:
+
+volumes:
+  Data-Source-volume:
+    driver: local
+    driver_opts:
+      o: bind
+      type: none
+      device: /daten/docker-projects/Factory_X_Trumpf_demonstrator/fx-ccm-dataspace-poc-business-int-logic/Data-Source
