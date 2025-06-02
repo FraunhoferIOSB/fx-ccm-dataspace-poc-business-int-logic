@@ -8,15 +8,26 @@ services:
     networks:
       - MX-Adapter-network
     volumes: 
-      - Data-Source-volume:/app/
+      - MX-Adapter-volume:/fx
+
+  OPCUA-Server:
+    image: opcua-server-image
+    container_name: MX-Adapter-OPCUA-Server
+    restart: always
+    ports:
+      - 4840:4840
+    networks:
+      - MX-Adapter-network
+    volumes: 
+      - MX-Adapter-volume:/fx
 
 networks:
   MX-Adapter-network:
 
 volumes:
-  Data-Source-volume:
+  MX-Adapter-volume:
     driver: local
     driver_opts:
       o: bind
       type: none
-      device: /daten/docker-projects/Factory_X_Trumpf_demonstrator/fx-ccm-dataspace-poc-business-int-logic/Data-Source
+      device: /daten/docker-projects/Factory_X_Trumpf_demonstrator/fx-ccm-dataspace-poc-business-int-logic

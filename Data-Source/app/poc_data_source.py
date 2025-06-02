@@ -1,6 +1,8 @@
 from typing import Union, Annotated
 from pydantic import BaseModel
 from fastapi import FastAPI, Query, Response
+from datetime import datetime
+import random
 
 # data generation functions, aka 'logic'
 from app.generatorV2 import generate_DQ, generate_Sensor_A, generate_Sensor_B, create_df, generate_df
@@ -41,8 +43,35 @@ def get_gen_units():
     """ Access the units of the dataset directly. """
     return {"Time": "s", "Sensor1": "g", "Sensor2": "g", "DQ1": "rpm", "DQ2": "rpm"}
 
+@app.get("/fx/gen/Temperature")
+def get_temperature():
+    """ generate dummy temperature """
+    value = random.randint(20, 100)
+    
+    current_time = datetime.now()
+    readable_timestamp = current_time.strftime("%Y-%m-%d %H:%M:%S")
+ 
+    return {"Value": value, "Timestamp": readable_timestamp}
 
+@app.get("/fx/gen/Current")
+def get_temperature():
+    """ generate dummy current """
+    value = random.uniform(0.0, 100.0)
+    
+    current_time = datetime.now()
+    readable_timestamp = current_time.strftime("%Y-%m-%d %H:%M:%S")
+ 
+    return {"Value": value, "Timestamp": readable_timestamp}
 
+@app.get("/fx/gen/Speed")
+def get_temperature():
+    """ generate dummy speed """
+    value = random.uniform(0.0, 5000.0)
+    
+    current_time = datetime.now()
+    readable_timestamp = current_time.strftime("%Y-%m-%d %H:%M:%S")
+ 
+    return {"Value": value, "Timestamp": readable_timestamp}
 
 # generate measurement and receive it as a json:
 @app.get("/fx/gen/json")
