@@ -1,0 +1,30 @@
+# simple BASE-Image
+FROM python:3.11-slim
+
+# ensure certificates for pip exist:
+# RUN apt-get update && apt-get install -y --no-install-recommends \
+#     ca-certificates \
+#     && rm -rf /var/lib/apt/lists/*
+
+ENV APP_HOME="/fx/adapter"
+
+
+# working directory for te container
+WORKDIR ${APP_HOME}
+
+# Install requirements
+COPY ./req.txt  ${APP_HOME}/req.txt
+RUN pip install --no-cache-dir --upgrade -r ${APP_HOME}/req.txt
+
+# copy app:
+COPY ./app ${APP_HOME}/app
+
+# Non-Root runtime user:
+# RUN useradd -u 10001 -r -s /usr/sbin/nologin appuser \
+#     && chown -R appuser:appuser ${APP_HOME}
+# USER appuser
+
+# Run "API-APP"
+CMD ["uvicorn", "app.adapter_ds:app", "--host", "0.0.0.0", "--port", "8000"]
+# NOTE: we might want to change the port-cfg depending on the deployment
+#       on the individual k8s-clusters (Arno's cluster, Catena cluster, SFH ...) 

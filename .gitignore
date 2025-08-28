@@ -54,3 +54,11 @@ distributions/azure/azure.properties
 bin
 .settings
 *.pyc
+
+# caches
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.venv
