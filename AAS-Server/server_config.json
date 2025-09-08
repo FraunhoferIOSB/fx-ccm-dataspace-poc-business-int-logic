@@ -1,0 +1,26 @@
+{
+    "persistence": {
+        "@class": "de.fraunhofer.iosb.ilt.faaast.service.persistence.memory.PersistenceInMemory"
+    },
+    "messageBus": {
+        "@class": "de.fraunhofer.iosb.ilt.faaast.service.messagebus.internal.MessageBusInternal",
+        "host": "",
+        "user": "",
+        "password": ""
+    },
+    "endpoints": [
+        {
+            "@class": "de.fraunhofer.iosb.ilt.faaast.service.endpoint.http.HttpEndpoint",
+            "corsAllowCredentials": false,
+            "corsAllowedHeaders": "X-Custom-Header",
+            "corsAllowedMethods": "GET, PUT, POST, PATCH, DELETE, HEAD",
+            "corsEnabled": true,
+            "sslEnabled": false,
+            "includeErrorDetails": true,
+            "corsExposedHeaders": "X-Custom-Header",
+            "corsMaxAge": 1000,
+            "port": 8000,
+            "profiles": [ "AAS_REPOSITORY_FULL", "AAS_FULL", "SUBMODEL_REPOSITORY_FULL", "SUBMODEL_FULL" ]
+        }
+    ]
+}

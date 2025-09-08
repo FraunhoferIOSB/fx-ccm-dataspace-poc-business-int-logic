@@ -1,0 +1,19 @@
+# MODIFIED FAAAST-IMAGE w/ backed in config 
+# Note: config passed via entry-point wrapper
+FROM fraunhoferiosb/faaast-service:latest
+
+# bake in config
+USER root
+RUN mkdir -p /app/config
+COPY --chown=1001:1001 server_config.json /app/config/server_config.json
+
+# add wrapper & "install" it:
+COPY --chown=1001:1001 entrypoint.sh /usr/local/bin/entrypoint.sh
+RUN chmod 0755 /usr/local/bin/entrypoint.sh
+
+# reset privilages
+USER faaast
+WORKDIR /app
+
+# use the new entry-point
+ENTRYPOINT [ "/usr/local/bin/entrypoint.sh" ]
