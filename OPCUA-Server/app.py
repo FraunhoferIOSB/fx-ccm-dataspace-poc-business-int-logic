@@ -39,7 +39,7 @@ _logger = logging.getLogger(__name__)
 
 def readOneChannel(channel):
 
-    url = "http://MX-Adapter-Data-Source:80" + channel.endPoint
+    url = "http://MX-Adapter-Data-Source:8000" + channel.endPoint
 
     try:
         response = requests.get(url)

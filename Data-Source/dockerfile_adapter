@@ -6,7 +6,7 @@ FROM python:3.11-slim
 #     ca-certificates \
 #     && rm -rf /var/lib/apt/lists/*
 
-ENV APP_HOME="/fx/adapter"
+ENV APP_HOME="/fx/Data-Source"
 
 
 # working directory for te container

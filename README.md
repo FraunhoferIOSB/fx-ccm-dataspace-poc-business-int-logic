@@ -4,7 +4,7 @@
 ## generate docker images first:
 
 cd Data-Source
-docker build -t data-source-image  .
+docker build -t data-source-image -f dockerfile_adapter .
 cd ..
 
 cd OPCUA-Server
