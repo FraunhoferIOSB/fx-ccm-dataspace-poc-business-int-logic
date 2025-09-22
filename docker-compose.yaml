@@ -20,6 +20,9 @@ services:
       - MX-Adapter-network
     volumes: 
       - MX-Adapter-volume:/fx
+    environment:
+      - DATA_SOURCE_NETWORK_URL=http://MX-Adapter-Data-Source:8000
+
 
 networks:
   MX-Adapter-network:

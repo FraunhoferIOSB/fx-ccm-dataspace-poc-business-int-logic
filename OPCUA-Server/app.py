@@ -4,6 +4,7 @@ import logging
 from asyncua import Server, ua
 from asyncua.common.methods import uamethod
 import requests
+import os
 
 from datetime import datetime, timedelta, timezone
 
@@ -39,8 +40,8 @@ _logger = logging.getLogger(__name__)
 
 def readOneChannel(channel):
 
-    url = "http://MX-Adapter-Data-Source:8000" + channel.endPoint
-
+    url =  os.getenv("DATA_SOURCE_NETWORK_URL") + channel.endPoint
+    
     try:
         response = requests.get(url)
         response.raise_for_status()  # Raise an error for bad status codes
@@ -55,6 +56,7 @@ def readOneChannel(channel):
 
     except requests.exceptions.RequestException as e:
         print(f"Error accessing the API: {e}")
+        print(f"Accessing URL: {url}") 
         value = 0
         date = ""
         status = ua.StatusCode(ua.StatusCodes.BadDataUnavailable)
