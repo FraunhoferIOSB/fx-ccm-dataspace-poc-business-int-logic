@@ -1,0 +1,16 @@
+FROM python:3.11-slim
+
+ENV APP_HOME="/fx/Blob-Converter"
+
+WORKDIR ${APP_HOME}
+
+# Install requirements
+COPY ./req.txt  /requirements/req.txt
+RUN pip install --no-cache-dir --upgrade -r /requirements/req.txt
+
+# copy app:
+COPY ./app.py ${APP_HOME}
+
+#CMD instruction should be used to run the software
+#contained by your image, along with any arguments.
+CMD [ "python",  "-u", "./app.py"]
