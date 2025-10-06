@@ -1,7 +1,8 @@
 from fastapi import FastAPI
 
 # custom routing:
-from app.routes import GenRouter, GetRouter, UploadRouter
+from app.routes import GenRouter, GetRouter, UploadRouter, \
+    AASTransferRouter
 
 # context management:
 from contextlib import asynccontextmanager
@@ -37,3 +38,4 @@ def read_root():
 app.include_router(GenRouter, prefix="/fx")
 app.include_router(GetRouter, prefix="/fx")
 app.include_router(UploadRouter, prefix="/fx")
+app.include_router(AASTransferRouter, prefix="/fx")

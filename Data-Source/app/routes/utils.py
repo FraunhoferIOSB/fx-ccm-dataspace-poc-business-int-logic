@@ -1,6 +1,8 @@
 import numpy as np
 from typing import List, Tuple
 import random
+import json
+import base64
 
 # === Helpers ===
 # construct masks:
@@ -89,3 +91,46 @@ def generate_random_machine_readings() \
     value_speed: float = round(random.uniform(0.0, 5000.0), ndigits=3)
 
     return value_temperature, value_current, value_speed
+
+
+# === AAS Utils ===
+def get_submodel_element_blob_template():
+    """
+    Generates a generic template for a Blob Submodel Element.
+
+    Returns:
+    - Dict with the template for a Blob Submodel Element
+    """
+    return {
+        "idShort": "",
+        "id": "",
+        "value": "",
+        "semanticId": {
+            "type": "ModelReference",
+            "keys": [
+                {
+                    "type": "GlobalReference",
+                    "value": "0173-1#02-AAM556#002"
+                }
+            ]
+        },
+        "contentType": "application/str",
+        "modelType": "Blob"
+    }
+
+
+# Encoding
+def encode_dict_to_b64(data_dict: dict) -> str:
+    """
+    Encodes a dictionary to a base64 string.
+
+    Args:
+    - data_dict: The dictionary to encode. Can include floats, ints, strings.
+
+    Returns:
+    - base 64 encoded string
+    """
+    json_str = json.dumps(data_dict)
+    json_bytes = json_str.encode('utf-8')
+    b64_str = base64.b64encode(json_bytes).decode('utf-8')
+    return b64_str

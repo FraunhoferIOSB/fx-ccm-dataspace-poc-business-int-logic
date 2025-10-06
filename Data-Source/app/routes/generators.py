@@ -5,12 +5,10 @@ from typing import Dict
 
 # helpers:
 from app.routes.utils import generate_random_machine_readings
+time_format: str = "%Y-%m-%d %H:%M:%S"
 
 # create router:
 router = APIRouter(prefix='/gen', tags=['generator', 'gen'])
-
-# helpers:
-time_format: str = "%Y-%m-%d %H:%M:%S"
 
 
 def exceeded_timeframe(s1: str, s2: str) -> bool:
