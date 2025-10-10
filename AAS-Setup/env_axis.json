@@ -1,0 +1,2613 @@
+{
+    "assetAdministrationShells": [
+        {
+            "modelType": "AssetAdministrationShell",
+            "id": "urn:https://trumpf.com/asset/instance/111_123/123456789",
+            "idShort": "Axis_111_123",
+            "administration": {
+                "version": "1",
+                "revision": "0"
+            },
+            "displayName": [
+                {
+                    "language": "en",
+                    "text": "Bewegunsachse X1"
+                }
+            ],
+            "description": [
+                {
+                    "language": "en",
+                    "text": "Bewegungsachse X1 im Gantry Verbund mit Getriebe und Motor."
+                }
+            ],
+            "derivedFrom": {
+                "type": "ModelReference",
+                "keys": [
+                    {
+                        "type": "AssetAdministrationShell",
+                        "value": "urn:https://trumpf.com/aas/type/Axis/111/"
+                    }
+                ]
+            },
+            "assetInformation": {
+                "assetKind": "Instance",
+                "globalAssetId": "urn:https://trumpf.com/asset/instance/111_123",
+                "specificAssetIds": [
+                    {
+                        "name": "SerialNumber",
+                        "value": "123"
+                    },
+                    {
+                        "name": "MaterialNumber",
+                        "value": "111"
+                    }
+                ]
+            },
+            "submodels": [
+                {
+                    "type": "ModelReference",
+                    "keys": [
+                        {
+                            "type": "Submodel",
+                            "value": "urn:https://trumpf.com/aas/submodel/BOM/Axis/111/123"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "modelType": "AssetAdministrationShell",
+            "id": "urn:org:example/aas/instance/0m01_234/123456789",
+            "idShort": "Motor_0m01_234",
+            "administration": {
+                "version": "1",
+                "revision": "0"
+            },
+            "displayName": [
+                {
+                    "language": "en",
+                    "text": "Motor"
+                }
+            ],
+            "description": [
+                {
+                    "language": "en",
+                    "text": "Motor in der Bewegunseinheit Achse X1"
+                }
+            ],
+            "derivedFrom": {
+                "type": "ModelReference",
+                "keys": [
+                    {
+                        "type": "AssetAdministrationShell",
+                        "value": "urn:org:example/aas/type/Motor/0m01/"
+                    }
+                ]
+            },
+            "assetInformation": {
+                "assetKind": "Instance",
+                "globalAssetId": "urn:org:example/aas/instance/0m01_234",
+                "specificAssetIds": [
+                    {
+                        "name": "SerialNumber",
+                        "value": "234"
+                    },
+                    {
+                        "name": "MaterialNumber",
+                        "value": "0m01"
+                    }
+                ]
+            },
+            "submodels": [
+                {
+                    "type": "ModelReference",
+                    "keys": [
+                        {
+                            "type": "Submodel",
+                            "value": "urn:https://trumpf.com/aas/submodel/TimeSeries/Motor/0m01/234"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "idShort": "aas_xNA7mRX",
+            "displayName": [
+                {
+                    "language": "en",
+                    "text": "AAS https://wgrp.biz/aas/xNA7mRX"
+                }
+            ],
+            "description": [
+                {
+                    "language": "en",
+                    "text": "The AAS with unique ID https://wgrp.biz/aas/xNA7mRX"
+                }
+            ],
+            "modelType": "AssetAdministrationShell",
+            "id": "https://wgrp.biz/aas/xNA7mRX",
+            "administration": {
+                "version": "1",
+                "revision": "0",
+                "creator": {
+                    "type": "ExternalReference",
+                    "keys": [
+                        {
+                            "type": "GlobalReference",
+                            "value": "https://wgrp.biz"
+                        }
+                    ]
+                },
+                "templateId": "https://wgrp.biz/aas/template"
+            },
+            "derivedFrom": {
+                "type": "ModelReference",
+                "keys": [
+                    {
+                        "type": "AssetAdministrationShell",
+                        "value": "https://wgrp.biz/aas/20081040"
+                    }
+                ]
+            },
+            "assetInformation": {
+                "assetKind": "Instance",
+                "globalAssetId": "https://wgrp.biz/xNA7mRX",
+                "specificAssetIds": [
+                    {
+                        "semanticId": {
+                            "type": "ExternalReference",
+                            "keys": [
+                                {
+                                    "type": "GlobalReference",
+                                    "value": "0173-1#02-AAO736#005"
+                                }
+                            ]
+                        },
+                        "name": "OrderCodeOfSupplier",
+                        "value": "DP 010F-MF2-35 -0C0-2S",
+                        "externalSubjectId": {
+                            "type": "ExternalReference",
+                            "keys": [
+                                {
+                                    "type": "GlobalReference",
+                                    "value": "https://wgrp.biz"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "semanticId": {
+                            "type": "ExternalReference",
+                            "keys": [
+                                {
+                                    "type": "GlobalReference",
+                                    "value": "0173-1#02-AAM556#003"
+                                }
+                            ]
+                        },
+                        "name": "SerialNumber",
+                        "value": "8349634",
+                        "externalSubjectId": {
+                            "type": "ExternalReference",
+                            "keys": [
+                                {
+                                    "type": "GlobalReference",
+                                    "value": "https://wgrp.biz"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "semanticId": {
+                            "type": "ExternalReference",
+                            "keys": [
+                                {
+                                    "type": "GlobalReference",
+                                    "value": "0173-1#02-ABF465#002"
+                                }
+                            ]
+                        },
+                        "name": "SerialNumberOfManufacturer",
+                        "value": "8349634",
+                        "externalSubjectId": {
+                            "type": "ExternalReference",
+                            "keys": [
+                                {
+                                    "type": "GlobalReference",
+                                    "value": "https://wgrp.biz"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "name": "EquipmentNumberSap",
+                        "value": "000000000008349634",
+                        "externalSubjectId": {
+                            "type": "ExternalReference",
+                            "keys": [
+                                {
+                                    "type": "GlobalReference",
+                                    "value": "https://wgrp.biz"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "assetType": "https://wgrp.biz/20081040",
+                "defaultThumbnail": {
+                    "path": "https://wgrpproductdata.blob.core.windows.net/product-images/00A1437X.png",
+                    "contentType": "image/png"
+                }
+            },
+            "submodels": [
+                {
+                    "type": "ModelReference",
+                    "keys": [
+                        {
+                            "type": "Submodel",
+                            "value": "https://wgrp.biz/sm/nameplate/2/0/xNA7mRX"
+                        }
+                    ],
+                    "referredSemanticId": {
+                        "type": "ExternalReference",
+                        "keys": [
+                            {
+                                "type": "GlobalReference",
+                                "value": "https://admin-shell.io/zvei/nameplate/2/0/Nameplate"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "ModelReference",
+                    "keys": [
+                        {
+                            "type": "Submodel",
+                            "value": "https://wgrp.biz/sm/healthindex/1/0/xNA7mRX"
+                        }
+                    ]
+                },
+                {
+                    "type": "ModelReference",
+                    "keys": [
+                        {
+                            "type": "Submodel",
+                            "value": "urn:uuid:67e08208-9035-4770-8d8c-db598324faa3"
+                        }
+                    ],
+                    "referredSemanticId": {
+                        "type": "ExternalReference",
+                        "keys": [
+                            {
+                                "type": "GlobalReference",
+                                "value": "https://admin-shell.io/zvei/nameplate/1/0/ContactInformations"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "ModelReference",
+                    "keys": [
+                        {
+                            "type": "Submodel",
+                            "value": "https://admin-shell.io/idta/TimeSeries/1/1"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "submodels": [
+        {
+            "modelType": "Submodel",
+            "kind": "Instance",
+            "id": "urn:https://trumpf.com/aas/submodel/BOM/Axis/111/123",
+            "idShort": "BOM",
+            "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                    {
+                        "type": "GlobalReference",
+                        "value": "https://admin-shell.io/idta/HierarchicalStructures/1/1/Submodel"
+                    }
+                ]
+            },
+            "submodelElements": [
+                {
+                    "modelType": "Property",
+                    "idShort": "ArcheType",
+                    "valueType": "xs:string",
+                    "semanticId": {
+                        "type": "ExternalReference",
+                        "keys": [
+                            {
+                                "type": "GlobalReference",
+                                "value": "https://admin-shell.io/idta/HierarchicalStructures/ArcheType/1/0"
+                            }
+                        ]
+                    },
+                    "value": "OneDown"
+                },
+                {
+                    "idShort": "EntryNode",
+                    "globalAssetId": "urn:https://trumpf.com/asset/instance/111_123",
+                    "semanticId": {
+                        "type": "ExternalReference",
+                        "keys": [
+                            {
+                                "type": "GlobalReference",
+                                "value": "https://admin-shell.io/idta/HierarchicalStructures/EntryNode/1/0"
+                            }
+                        ]
+                    },
+                    "modelType": "Entity",
+                    "entityType": "SelfManagedEntity",
+                    "description": [
+                        {
+                            "language": "en",
+                            "text": "The root node of the hierarchical structure."
+                        }
+                    ],
+                    "statements": [
+                        {
+                            "modelType": "ReferenceElement",
+                            "idShort": "ReferenceAAS",
+                            "value": {
+                                "type": "ModelReference",
+                                "keys": [
+                                    {
+                                        "type": "AssetAdministrationShell",
+                                        "value": "urn:https://trumpf.com/asset/instance/111_123/123456789"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "idShort": "Node_Motor_0m01_234",
+                    "globalAssetId": "urn:org:example/aas/instance/0m01_234",
+                    "semanticId": {
+                        "type": "ExternalReference",
+                        "keys": [
+                            {
+                                "type": "GlobalReference",
+                                "value": "https://admin-shell.io/idta/HierarchicalStructures/Node/1/0"
+                            }
+                        ]
+                    },
+                    "modelType": "Entity",
+                    "entityType": "SelfManagedEntity",
+                    "description": [
+                        {
+                            "language": "en",
+                            "text": "Sub-Component"
+                        }
+                    ],
+                    "statements": [
+                        {
+                            "modelType": "ReferenceElement",
+                            "idShort": "ReferenceAAS",
+                            "value": {
+                                "type": "ModelReference",
+                                "keys": [
+                                    {
+                                        "type": "AssetAdministrationShell",
+                                        "value": "urn:org:example/aas/instance/0m01_234/123456789"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "modelType": "AnnotatedRelationshipElement",
+                    "idShort": "HasPart_Component_Motor_0m01_234",
+                    "semanticId": {
+                        "type": "ExternalReference",
+                        "keys": [
+                            {
+                                "type": "GlobalReference",
+                                "value": "https://admin-shell.io/idta/HierarchicalStructures/HasPart/1/0"
+                            }
+                        ]
+                    },
+                    "first": {
+                        "type": "ModelReference",
+                        "keys": [
+                            {
+                                "type": "Submodel",
+                                "value": "urn:https://trumpf.com/asset/instance/111_123/123456789"
+                            },
+                            {
+                                "type": "SubmodelElement",
+                                "value": "Node_Axis_111_123"
+                            }
+                        ]
+                    },
+                    "second": {
+                        "type": "ModelReference",
+                        "keys": [
+                            {
+                                "type": "Submodel",
+                                "value": "urn:org:example/aas/instance/0m01_234/123456789"
+                            },
+                            {
+                                "type": "SubmodelElement",
+                                "value": "Node_Motor_0m01_234"
+                            }
+                        ]
+                    },
+                    "annotations": [
+                        {
+                            "modelType": "Property",
+                            "idShort": "validFrom",
+                            "valueType": "xs:dateTime",
+                            "value": "2023-01-01T00:00:00Z"
+                        }
+                    ]
+                },
+                {
+                    "idShort": "Node_aas_xNA7mRX",
+                    "globalAssetId": "https://wgrp.biz/xNA7mRX",
+                    "semanticId": {
+                        "type": "ExternalReference",
+                        "keys": [
+                            {
+                                "type": "GlobalReference",
+                                "value": "https://admin-shell.io/idta/HierarchicalStructures/Node/1/0"
+                            }
+                        ]
+                    },
+                    "modelType": "Entity",
+                    "entityType": "SelfManagedEntity",
+                    "description": [
+                        {
+                            "language": "en",
+                            "text": "Sub-Component"
+                        }
+                    ],
+                    "statements": [
+                        {
+                            "modelType": "ReferenceElement",
+                            "idShort": "ReferenceAAS",
+                            "value": {
+                                "type": "ModelReference",
+                                "keys": [
+                                    {
+                                        "type": "AssetAdministrationShell",
+                                        "value": "https://wgrp.biz/aas/xNA7mRX"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "modelType": "AnnotatedRelationshipElement",
+                    "idShort": "HasPart_Component_aas_xNA7mRX",
+                    "semanticId": {
+                        "type": "ExternalReference",
+                        "keys": [
+                            {
+                                "type": "GlobalReference",
+                                "value": "https://admin-shell.io/idta/HierarchicalStructures/HasPart/1/0"
+                            }
+                        ]
+                    },
+                    "first": {
+                        "type": "ModelReference",
+                        "keys": [
+                            {
+                                "type": "Submodel",
+                                "value": "urn:https://trumpf.com/asset/instance/111_123/123456789"
+                            },
+                            {
+                                "type": "SubmodelElement",
+                                "value": "Node_Axis_111_123"
+                            }
+                        ]
+                    },
+                    "second": {
+                        "type": "ModelReference",
+                        "keys": [
+                            {
+                                "type": "Submodel",
+                                "value": "https://wgrp.biz/aas/xNA7mRX"
+                            },
+                            {
+                                "type": "SubmodelElement",
+                                "value": "Node_aas_xNA7mRX"
+                            }
+                        ]
+                    },
+                    "annotations": [
+                        {
+                            "modelType": "Property",
+                            "idShort": "validFrom",
+                            "valueType": "xs:dateTime",
+                            "value": "2023-01-01T00:00:00Z"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "urn:https://trumpf.com/aas/submodel/TimeSeries/Motor/0m01/234",
+            "idShort": "TimeSeries",
+            "modelType": "Submodel",
+            "kind": "Instance",
+            "description": [
+                {
+                    "language": "de",
+                    "text": "Zeitreihen-Daten der Komponente Motor \u00fcber den gesamten Lebenszyklus"
+                },
+                {
+                    "language": "en",
+                    "text": "Time-Series Data of component Motor along its lifecycle."
+                }
+            ],
+            "administration": {
+                "version": "1",
+                "revision": "1"
+            },
+            "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                    {
+                        "type": "GlobalReference",
+                        "value": "https://admin-shell.io/idta/TimeSeries/1/1"
+                    }
+                ]
+            },
+            "submodelElements": [
+                {
+                    "idShort": "Metadata",
+                    "modelType": "SubmodelElementCollection",
+                    "semanticId": {
+                        "type": "ExternalReference",
+                        "keys": [
+                            {
+                                "type": "GlobalReference",
+                                "value": "https://admin-shell.io/idta/TimeSeries/Metadata/1/1"
+                            }
+                        ]
+                    },
+                    "value": [
+                        {
+                            "idShort": "Name",
+                            "category": "PARAMETER",
+                            "modelType": "MultiLanguageProperty",
+                            "semanticId": {
+                                "type": "ExternalReference",
+                                "keys": [
+                                    {
+                                        "type": "GlobalReference",
+                                        "value": "https://admin-shell.io/idta/TimeSeries/Metadata/Name/1/1"
+                                    }
+                                ]
+                            },
+                            "value": [
+                                {
+                                    "language": "de",
+                                    "text": "Blob Transfer Antriebssteuerungs Daten"
+                                },
+                                {
+                                    "language": "en",
+                                    "text": "Blob Transfer Motion-Contol Data"
+                                }
+                            ]
+                        },
+                        {
+                            "idShort": "Description",
+                            "category": "PARAMETER",
+                            "modelType": "MultiLanguageProperty",
+                            "semanticId": {
+                                "type": "ExternalReference",
+                                "keys": [
+                                    {
+                                        "type": "GlobalReference",
+                                        "value": "https://admin-shell.io/idta/TimeSeries/Metadata/Description/1/1"
+                                    }
+                                ]
+                            },
+                            "value": [
+                                {
+                                    "language": "de",
+                                    "text": "Blob beinhaltet die Daten der Antriebssteuerung, wie Geschindigkeit und Strom"
+                                },
+                                {
+                                    "language": "en",
+                                    "text": "Blob contains Motion-Contol Data like velocity and electricity"
+                                }
+                            ]
+                        },
+                        {
+                            "idShort": "Record",
+                            "modelType": "SubmodelElementCollection",
+                            "semanticId": {
+                                "type": "ExternalReference",
+                                "keys": [
+                                    {
+                                        "type": "GlobalReference",
+                                        "value": "https://admin-shell.io/idta/TimeSeries/Record/1/1"
+                                    }
+                                ]
+                            },
+                            "value": [
+                                {
+                                    "category": "PARAMETER",
+                                    "idShort": "SamplingRate",
+                                    "semanticId": {
+                                        "type": "ExternalReference",
+                                        "keys": [
+                                            {
+                                                "type": "GlobalReference",
+                                                "value": "https://admin-shell.io/idta/TimeSeries/Segment/SamplingRate/1/1"
+                                            }
+                                        ]
+                                    },
+                                    "qualifiers": [
+                                        {
+                                            "type": "Cardinality",
+                                            "valueType": "xs:string",
+                                            "value": "ZeroToOne"
+                                        }
+                                    ],
+                                    "valueType": "xs:long",
+                                    "modelType": "Property",
+                                    "value": "8000"
+                                },
+                                {
+                                    "category": "PARAMETER",
+                                    "idShort": "Electricity",
+                                    "semanticId": {
+                                        "type": "ExternalReference",
+                                        "keys": [
+                                            {
+                                                "type": "GlobalReference",
+                                                "value": "https://admin-shell.io/idta/TimeSeries/Segment/Electricity/1/1"
+                                            }
+                                        ]
+                                    },
+                                    "qualifiers": [
+                                        {
+                                            "type": "Cardinality",
+                                            "valueType": "xs:string",
+                                            "value": "ZeroToOne"
+                                        }
+                                    ],
+                                    "valueType": "xs:string",
+                                    "modelType": "Property",
+                                    "value": "[A]"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "idShort": "Segments",
+                    "modelType": "SubmodelElementCollection",
+                    "semanticId": {
+                        "type": "ExternalReference",
+                        "keys": [
+                            {
+                                "type": "GlobalReference",
+                                "value": "https://admin-shell.io/idta/TimeSeries/Segments/1/1"
+                            }
+                        ]
+                    },
+                    "value": []
+                }
+            ]
+        },
+        {
+            "idShort": "ContactInformations",
+            "displayName": [
+                {
+                    "language": "de",
+                    "text": "Kontaktinformationen"
+                },
+                {
+                    "language": "en",
+                    "text": "Contact informations"
+                }
+            ],
+            "description": [
+                {
+                    "language": "en",
+                    "text": "The Submodel \u201cContactInformations\u201d is the collection for various contact information."
+                }
+            ],
+            "modelType": "Submodel",
+            "id": "urn:uuid:67e08208-9035-4770-8d8c-db598324faa3",
+            "administration": {
+                "version": "1",
+                "revision": "0",
+                "creator": {
+                    "type": "ExternalReference",
+                    "keys": [
+                        {
+                            "type": "GlobalReference",
+                            "value": "https://wgrp.biz/walpha"
+                        }
+                    ]
+                },
+                "templateId": "https://admin-shell.io/zvei/nameplate/1/0/ContactInformations"
+            },
+            "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                    {
+                        "type": "GlobalReference",
+                        "value": "https://admin-shell.io/zvei/nameplate/1/0/ContactInformations"
+                    }
+                ]
+            },
+            "submodelElements": [
+                {
+                    "idShort": "ContactInformation01",
+                    "description": [
+                        {
+                            "language": "en",
+                            "text": "The SMC \u201cContactInformation\u201d contains information on how to contact the manufacturer\n                                or an authorised service provider, e.g. when a maintenance service is required\n                            "
+                        }
+                    ],
+                    "modelType": "SubmodelElementCollection",
+                    "semanticId": {
+                        "type": "ExternalReference",
+                        "keys": [
+                            {
+                                "type": "GlobalReference",
+                                "value": "https://admin-shell.io/zvei/nameplate/1/0/ContactInformations/ContactInformation"
+                            }
+                        ]
+                    },
+                    "value": [
+                        {
+                            "idShort": "RoleOfContactPerson",
+                            "category": "PARAMETER",
+                            "description": [
+                                {
+                                    "language": "en",
+                                    "text": "function of a contact person in a process. enumeration: 0173-1#07-AAS927#001\n                                        (administrativ contact), 0173-1#07-AAS928#001 (commercial contact),\n                                        0173-1#07-AAS929#001 (other contact), 0173-1#07-AAS930#001 (hazardous goods\n                                        contact), 0173-1#07-AAS931#001 (technical contact). Note: the above mentioned\n                                        ECLASS enumeration should be declared as \u201copen\u201d for further addition. ECLASS\n                                        enumeration IRDI is preferable. If no IRDI available, custom input as String may\n                                        also be accepted.\n                                    "
+                                }
+                            ],
+                            "modelType": "Property",
+                            "semanticId": {
+                                "type": "ExternalReference",
+                                "keys": [
+                                    {
+                                        "type": "GlobalReference",
+                                        "value": "0173-1#02-AAO204#003"
+                                    }
+                                ]
+                            },
+                            "value": "0173-1#07-AAS927#001",
+                            "valueId": {
+                                "type": "ExternalReference",
+                                "keys": [
+                                    {
+                                        "type": "GlobalReference",
+                                        "value": "0173-1#07-AAS927#001"
+                                    }
+                                ]
+                            },
+                            "valueType": "xs:string"
+                        },
+                        {
+                            "idShort": "NationalCode",
+                            "category": "PARAMETER",
+                            "description": [
+                                {
+                                    "language": "en",
+                                    "text": "code of a country. Note: country codes defined accord. to DIN EN ISO 3166-1.\n                                        Recommendation: property declaration as MLP is required by its semantic\n                                        definition. As the property value is language independent, users are recommended\n                                        to provide maximal 1 string in any language of the user\u2019s choice.\n                                    "
+                                }
+                            ],
+                            "modelType": "MultiLanguageProperty",
+                            "semanticId": {
+                                "type": "ExternalReference",
+                                "keys": [
+                                    {
+                                        "type": "GlobalReference",
+                                        "value": "0173-1#02-AAO134#002"
+                                    }
+                                ]
+                            },
+                            "value": [
+                                {
+                                    "language": "de",
+                                    "text": "DE"
+                                }
+                            ]
+                        },
+                        {
+                            "idShort": "Language01",
+                            "category": "PARAMETER",
+                            "description": [
+                                {
+                                    "language": "en",
+                                    "text": "Available language. Note: language codes defined accord. to ISO 639-1. Note:\n                                        as per ECLASS definition, Expression and representation of thoughts,\n                                        information, feelings, ideas through characters.\n                                    "
+                                }
+                            ],
+                            "modelType": "Property",
+                            "semanticId": {
+                                "type": "ExternalReference",
+                                "keys": [
+                                    {
+                                        "type": "GlobalReference",
+                                        "value": "\n                                            https://admin-shell.io/zvei/nameplate/1/0/ContactInformations/ContactInformation/Language\n                                        "
+                                    }
+                                ]
+                            },
+                            "value": "DE",
+                            "valueType": "xs:string"
+                        },
+                        {
+                            "idShort": "Language02",
+                            "category": "PARAMETER",
+                            "description": [
+                                {
+                                    "language": "en",
+                                    "text": "Available language. Note: language codes defined accord. to ISO 639-1. Note:\n                                        as per ECLASS definition, Expression and representation of thoughts,\n                                        information, feelings, ideas through characters.\n                                    "
+                                }
+                            ],
+                            "modelType": "Property",
+                            "semanticId": {
+                                "type": "ExternalReference",
+                                "keys": [
+                                    {
+                                        "type": "GlobalReference",
+                                        "value": "\n                                            https://admin-shell.io/zvei/nameplate/1/0/ContactInformations/ContactInformation/Language\n                                        "
+                                    }
+                                ]
+                            },
+                            "value": "EN",
+                            "valueType": "xs:string"
+                        },
+                        {
+                            "idShort": "CityTown",
+                            "category": "PARAMETER",
+                            "description": [
+                                {
+                                    "language": "en",
+                                    "text": "town or city."
+                                }
+                            ],
+                            "modelType": "MultiLanguageProperty",
+                            "semanticId": {
+                                "type": "ExternalReference",
+                                "keys": [
+                                    {
+                                        "type": "GlobalReference",
+                                        "value": "0173-1#02-AAO132#002"
+                                    }
+                                ]
+                            },
+                            "value": [
+                                {
+                                    "language": "de",
+                                    "text": "Igersheim-Harthausen"
+                                }
+                            ]
+                        },
+                        {
+                            "idShort": "Company",
+                            "category": "PARAMETER",
+                            "description": [
+                                {
+                                    "language": "en",
+                                    "text": "name of the company"
+                                }
+                            ],
+                            "modelType": "MultiLanguageProperty",
+                            "semanticId": {
+                                "type": "ExternalReference",
+                                "keys": [
+                                    {
+                                        "type": "GlobalReference",
+                                        "value": "0173-1#02-AAW001#001"
+                                    }
+                                ]
+                            },
+                            "value": [
+                                {
+                                    "language": "de",
+                                    "text": "WITTENSTEIN alpha GmbH"
+                                },
+                                {
+                                    "language": "en",
+                                    "text": "WITTENSTEIN alpha GmbH"
+                                }
+                            ]
+                        },
+                        {
+                            "idShort": "Department",
+                            "category": "PARAMETER",
+                            "description": [
+                                {
+                                    "language": "en",
+                                    "text": "administrative section within an organisation where a business partner is\n                                        located\n                                    "
+                                }
+                            ],
+                            "modelType": "MultiLanguageProperty",
+                            "semanticId": {
+                                "type": "ExternalReference",
+                                "keys": [
+                                    {
+                                        "type": "GlobalReference",
+                                        "value": "0173-1#02-AAO127#003"
+                                    }
+                                ]
+                            },
+                            "value": [
+                                {
+                                    "language": "de",
+                                    "text": "Vertrieb"
+                                },
+                                {
+                                    "language": "en",
+                                    "text": "Sales"
+                                }
+                            ]
+                        },
+                        {
+                            "idShort": "Phone",
+                            "description": [
+                                {
+                                    "language": "en",
+                                    "text": "Phone number including type"
+                                }
+                            ],
+                            "modelType": "SubmodelElementCollection",
+                            "semanticId": {
+                                "type": "ExternalReference",
+                                "keys": [
+                                    {
+                                        "type": "GlobalReference",
+                                        "value": "\n                                            https://admin-shell.io/zvei/nameplate/1/0/ContactInformations/ContactInformation/Phone\n                                        "
+                                    }
+                                ]
+                            },
+                            "value": [
+                                {
+                                    "idShort": "TelephoneNumber",
+                                    "category": "PARAMETER",
+                                    "description": [
+                                        {
+                                            "language": "en",
+                                            "text": "complete telephone number to be called to reach a business"
+                                        }
+                                    ],
+                                    "modelType": "MultiLanguageProperty",
+                                    "semanticId": {
+                                        "type": "ExternalReference",
+                                        "keys": [
+                                            {
+                                                "type": "GlobalReference",
+                                                "value": "0173-1#02-AAO136#002"
+                                            }
+                                        ]
+                                    },
+                                    "value": [
+                                        {
+                                            "language": "de",
+                                            "text": "+49 7931 493 0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "idShort": "Email",
+                            "description": [
+                                {
+                                    "language": "en",
+                                    "text": "E-mail address and encryption method"
+                                }
+                            ],
+                            "modelType": "SubmodelElementCollection",
+                            "semanticId": {
+                                "type": "ExternalReference",
+                                "keys": [
+                                    {
+                                        "type": "GlobalReference",
+                                        "value": "0173-1#02-AAQ836#005"
+                                    }
+                                ]
+                            },
+                            "value": [
+                                {
+                                    "idShort": "EmailAddress",
+                                    "category": "PARAMETER",
+                                    "description": [
+                                        {
+                                            "language": "en",
+                                            "text": "electronic mail address of a business partner"
+                                        }
+                                    ],
+                                    "modelType": "Property",
+                                    "semanticId": {
+                                        "type": "ExternalReference",
+                                        "keys": [
+                                            {
+                                                "type": "GlobalReference",
+                                                "value": "0173-1#02-AAO198#002"
+                                            }
+                                        ]
+                                    },
+                                    "value": "info@wittenstein-alpha.de",
+                                    "valueType": "xs:string"
+                                }
+                            ]
+                        },
+                        {
+                            "idShort": "Street",
+                            "category": "PARAMETER",
+                            "description": [
+                                {
+                                    "language": "en",
+                                    "text": "street name and house number"
+                                }
+                            ],
+                            "modelType": "MultiLanguageProperty",
+                            "semanticId": {
+                                "type": "ExternalReference",
+                                "keys": [
+                                    {
+                                        "type": "GlobalReference",
+                                        "value": "0173-1#02-AAO128#002"
+                                    }
+                                ]
+                            },
+                            "value": [
+                                {
+                                    "language": "de",
+                                    "text": "Walter-Wittenstein-Stra\u00dfe 1"
+                                },
+                                {
+                                    "language": "en",
+                                    "text": "Walter-Wittenstein-Stra\u00dfe 1"
+                                }
+                            ]
+                        },
+                        {
+                            "idShort": "Zipcode",
+                            "category": "PARAMETER",
+                            "description": [
+                                {
+                                    "language": "en",
+                                    "text": "ZIP code of address"
+                                }
+                            ],
+                            "modelType": "MultiLanguageProperty",
+                            "semanticId": {
+                                "type": "ExternalReference",
+                                "keys": [
+                                    {
+                                        "type": "GlobalReference",
+                                        "value": "0173-1#02-AAO129#002"
+                                    }
+                                ]
+                            },
+                            "value": [
+                                {
+                                    "language": "de",
+                                    "text": "97999"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "idShort": "ContactInformation02",
+                    "description": [
+                        {
+                            "language": "en",
+                            "text": "The SMC \u201cContactInformation\u201d contains information on how to contact the manufacturer\n                                or an authorised service provider, e.g. when a maintenance service is required\n                            "
+                        }
+                    ],
+                    "modelType": "SubmodelElementCollection",
+                    "semanticId": {
+                        "type": "ExternalReference",
+                        "keys": [
+                            {
+                                "type": "GlobalReference",
+                                "value": "\n                                    https://admin-shell.io/zvei/nameplate/1/0/ContactInformations/ContactInformation\n                                "
+                            }
+                        ]
+                    },
+                    "value": [
+                        {
+                            "idShort": "RoleOfContactPerson",
+                            "category": "PARAMETER",
+                            "description": [
+                                {
+                                    "language": "en",
+                                    "text": "function of a contact person in a process. enumeration: 0173-1#07-AAS927#001\n                                        (administrativ contact), 0173-1#07-AAS928#001 (commercial contact),\n                                        0173-1#07-AAS929#001 (other contact), 0173-1#07-AAS930#001 (hazardous goods\n                                        contact), 0173-1#07-AAS931#001 (technical contact). Note: the above mentioned\n                                        ECLASS enumeration should be declared as \u201copen\u201d for further addition. ECLASS\n                                        enumeration IRDI is preferable. If no IRDI available, custom input as String may\n                                        also be accepted.\n                                    "
+                                }
+                            ],
+                            "modelType": "Property",
+                            "semanticId": {
+                                "type": "ExternalReference",
+                                "keys": [
+                                    {
+                                        "type": "GlobalReference",
+                                        "value": "0173-1#02-AAO204#003"
+                                    }
+                                ]
+                            },
+                            "value": "technical contact",
+                            "valueId": {
+                                "type": "ExternalReference",
+                                "keys": [
+                                    {
+                                        "type": "GlobalReference",
+                                        "value": "0173-1#07-AAS931#001"
+                                    }
+                                ]
+                            },
+                            "valueType": "xs:string"
+                        },
+                        {
+                            "idShort": "NationalCode",
+                            "category": "PARAMETER",
+                            "description": [
+                                {
+                                    "language": "en",
+                                    "text": "code of a country. Note: country codes defined accord. to DIN EN ISO 3166-1.\n                                        Recommendation: property declaration as MLP is required by its semantic\n                                        definition. As the property value is language independent, users are recommended\n                                        to provide maximal 1 string in any language of the user\u2019s choice.\n                                    "
+                                }
+                            ],
+                            "modelType": "MultiLanguageProperty",
+                            "semanticId": {
+                                "type": "ExternalReference",
+                                "keys": [
+                                    {
+                                        "type": "GlobalReference",
+                                        "value": "0173-1#02-AAO134#002"
+                                    }
+                                ]
+                            },
+                            "value": [
+                                {
+                                    "language": "de",
+                                    "text": "DE"
+                                }
+                            ]
+                        },
+                        {
+                            "idShort": "Language01",
+                            "category": "PARAMETER",
+                            "description": [
+                                {
+                                    "language": "en",
+                                    "text": "Available language. Note: language codes defined accord. to ISO 639-1. Note:\n                                        as per ECLASS definition, Expression and representation of thoughts,\n                                        information, feelings, ideas through characters.\n                                    "
+                                }
+                            ],
+                            "modelType": "Property",
+                            "semanticId": {
+                                "type": "ExternalReference",
+                                "keys": [
+                                    {
+                                        "type": "GlobalReference",
+                                        "value": "\n                                            https://admin-shell.io/zvei/nameplate/1/0/ContactInformations/ContactInformation/Language\n                                        "
+                                    }
+                                ]
+                            },
+                            "value": "DE",
+                            "valueType": "xs:string"
+                        },
+                        {
+                            "idShort": "Language02",
+                            "category": "PARAMETER",
+                            "description": [
+                                {
+                                    "language": "en",
+                                    "text": "Available language. Note: language codes defined accord. to ISO 639-1. Note:\n                                        as per ECLASS definition, Expression and representation of thoughts,\n                                        information, feelings, ideas through characters.\n                                    "
+                                }
+                            ],
+                            "modelType": "Property",
+                            "semanticId": {
+                                "type": "ExternalReference",
+                                "keys": [
+                                    {
+                                        "type": "GlobalReference",
+                                        "value": "\n                                            https://admin-shell.io/zvei/nameplate/1/0/ContactInformations/ContactInformation/Language\n                                        "
+                                    }
+                                ]
+                            },
+                            "value": "EN",
+                            "valueType": "xs:string"
+                        },
+                        {
+                            "idShort": "CityTown",
+                            "category": "PARAMETER",
+                            "description": [
+                                {
+                                    "language": "en",
+                                    "text": "town or city."
+                                }
+                            ],
+                            "modelType": "MultiLanguageProperty",
+                            "semanticId": {
+                                "type": "ExternalReference",
+                                "keys": [
+                                    {
+                                        "type": "GlobalReference",
+                                        "value": "0173-1#02-AAO132#002"
+                                    }
+                                ]
+                            },
+                            "value": [
+                                {
+                                    "language": "de",
+                                    "text": "Igersheim-Harthausen"
+                                }
+                            ]
+                        },
+                        {
+                            "idShort": "Company",
+                            "category": "PARAMETER",
+                            "description": [
+                                {
+                                    "language": "en",
+                                    "text": "name of the company"
+                                }
+                            ],
+                            "modelType": "MultiLanguageProperty",
+                            "semanticId": {
+                                "type": "ExternalReference",
+                                "keys": [
+                                    {
+                                        "type": "GlobalReference",
+                                        "value": "0173-1#02-AAW001#001"
+                                    }
+                                ]
+                            },
+                            "value": [
+                                {
+                                    "language": "de",
+                                    "text": "WITTENSTEIN alpha GmbH"
+                                },
+                                {
+                                    "language": "en",
+                                    "text": "WITTENSTEIN alpha GmbH"
+                                }
+                            ]
+                        },
+                        {
+                            "idShort": "Department",
+                            "category": "PARAMETER",
+                            "description": [
+                                {
+                                    "language": "en",
+                                    "text": "administrative section within an organisation where a business partner is\n                                        located\n                                    "
+                                }
+                            ],
+                            "modelType": "MultiLanguageProperty",
+                            "semanticId": {
+                                "type": "ExternalReference",
+                                "keys": [
+                                    {
+                                        "type": "GlobalReference",
+                                        "value": "0173-1#02-AAO127#003"
+                                    }
+                                ]
+                            },
+                            "value": [
+                                {
+                                    "language": "de",
+                                    "text": "Service"
+                                },
+                                {
+                                    "language": "en",
+                                    "text": "Service"
+                                }
+                            ]
+                        },
+                        {
+                            "idShort": "Phone",
+                            "description": [
+                                {
+                                    "language": "en",
+                                    "text": "Phone number including type"
+                                }
+                            ],
+                            "modelType": "SubmodelElementCollection",
+                            "semanticId": {
+                                "type": "ExternalReference",
+                                "keys": [
+                                    {
+                                        "type": "GlobalReference",
+                                        "value": "\n                                            https://admin-shell.io/zvei/nameplate/1/0/ContactInformations/ContactInformation/Phone\n                                        "
+                                    }
+                                ]
+                            },
+                            "value": [
+                                {
+                                    "idShort": "TelephoneNumber",
+                                    "category": "PARAMETER",
+                                    "description": [
+                                        {
+                                            "language": "en",
+                                            "text": "complete telephone number to be called to reach a business"
+                                        }
+                                    ],
+                                    "modelType": "MultiLanguageProperty",
+                                    "semanticId": {
+                                        "type": "ExternalReference",
+                                        "keys": [
+                                            {
+                                                "type": "GlobalReference",
+                                                "value": "0173-1#02-AAO136#002"
+                                            }
+                                        ]
+                                    },
+                                    "value": [
+                                        {
+                                            "language": "de",
+                                            "text": "+49 7931 493 10900"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "idShort": "Email",
+                            "description": [
+                                {
+                                    "language": "en",
+                                    "text": "E-mail address and encryption method"
+                                }
+                            ],
+                            "modelType": "SubmodelElementCollection",
+                            "semanticId": {
+                                "type": "ExternalReference",
+                                "keys": [
+                                    {
+                                        "type": "GlobalReference",
+                                        "value": "0173-1#02-AAQ836#005"
+                                    }
+                                ]
+                            },
+                            "value": [
+                                {
+                                    "idShort": "EmailAddress",
+                                    "category": "PARAMETER",
+                                    "description": [
+                                        {
+                                            "language": "en",
+                                            "text": "electronic mail address of a business partner"
+                                        }
+                                    ],
+                                    "modelType": "Property",
+                                    "semanticId": {
+                                        "type": "ExternalReference",
+                                        "keys": [
+                                            {
+                                                "type": "GlobalReference",
+                                                "value": "0173-1#02-AAO198#002"
+                                            }
+                                        ]
+                                    },
+                                    "value": "service@wittenstein.de",
+                                    "valueType": "xs:string"
+                                }
+                            ]
+                        },
+                        {
+                            "idShort": "Street",
+                            "category": "PARAMETER",
+                            "description": [
+                                {
+                                    "language": "en",
+                                    "text": "street name and house number"
+                                }
+                            ],
+                            "modelType": "MultiLanguageProperty",
+                            "semanticId": {
+                                "type": "ExternalReference",
+                                "keys": [
+                                    {
+                                        "type": "GlobalReference",
+                                        "value": "0173-1#02-AAO128#002"
+                                    }
+                                ]
+                            },
+                            "value": [
+                                {
+                                    "language": "de",
+                                    "text": "Walter-Wittenstein-Str. 1"
+                                },
+                                {
+                                    "language": "en",
+                                    "text": "Walter-Wittenstein-Str. 1"
+                                }
+                            ]
+                        },
+                        {
+                            "idShort": "Zipcode",
+                            "category": "PARAMETER",
+                            "description": [
+                                {
+                                    "language": "en",
+                                    "text": "ZIP code of address"
+                                }
+                            ],
+                            "modelType": "MultiLanguageProperty",
+                            "semanticId": {
+                                "type": "ExternalReference",
+                                "keys": [
+                                    {
+                                        "type": "GlobalReference",
+                                        "value": "0173-1#02-AAO129#002"
+                                    }
+                                ]
+                            },
+                            "value": [
+                                {
+                                    "language": "de",
+                                    "text": "97999"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "idShort": "ContactInformation03",
+                    "description": [
+                        {
+                            "language": "en",
+                            "text": "The SMC \u201cContactInformation\u201d contains information on how to contact the manufacturer\n                                or an authorised service provider, e.g. when a maintenance service is required\n                            "
+                        }
+                    ],
+                    "modelType": "SubmodelElementCollection",
+                    "semanticId": {
+                        "type": "ExternalReference",
+                        "keys": [
+                            {
+                                "type": "GlobalReference",
+                                "value": "\n                                    https://admin-shell.io/zvei/nameplate/1/0/ContactInformations/ContactInformation\n                                "
+                            }
+                        ]
+                    },
+                    "value": [
+                        {
+                            "idShort": "RoleOfContactPerson",
+                            "category": "PARAMETER",
+                            "description": [
+                                {
+                                    "language": "en",
+                                    "text": "function of a contact person in a process. enumeration: 0173-1#07-AAS927#001\n                                        (administrativ contact), 0173-1#07-AAS928#001 (commercial contact),\n                                        0173-1#07-AAS929#001 (other contact), 0173-1#07-AAS930#001 (hazardous goods\n                                        contact), 0173-1#07-AAS931#001 (technical contact). Note: the above mentioned\n                                        ECLASS enumeration should be declared as \u201copen\u201d for further addition. ECLASS\n                                        enumeration IRDI is preferable. If no IRDI available, custom input as String may\n                                        also be accepted.\n                                    "
+                                }
+                            ],
+                            "modelType": "Property",
+                            "semanticId": {
+                                "type": "ExternalReference",
+                                "keys": [
+                                    {
+                                        "type": "GlobalReference",
+                                        "value": "0173-1#02-AAO204#003"
+                                    }
+                                ]
+                            },
+                            "value": "technical contact",
+                            "valueId": {
+                                "type": "ExternalReference",
+                                "keys": [
+                                    {
+                                        "type": "GlobalReference",
+                                        "value": "0173-1#07-AAS931#001"
+                                    }
+                                ]
+                            },
+                            "valueType": "xs:string"
+                        },
+                        {
+                            "idShort": "NationalCode",
+                            "category": "PARAMETER",
+                            "description": [
+                                {
+                                    "language": "en",
+                                    "text": "code of a country. Note: country codes defined accord. to DIN EN ISO 3166-1.\n                                        Recommendation: property declaration as MLP is required by its semantic\n                                        definition. As the property value is language independent, users are recommended\n                                        to provide maximal 1 string in any language of the user\u2019s choice.\n                                    "
+                                }
+                            ],
+                            "modelType": "MultiLanguageProperty",
+                            "semanticId": {
+                                "type": "ExternalReference",
+                                "keys": [
+                                    {
+                                        "type": "GlobalReference",
+                                        "value": "0173-1#02-AAO134#002"
+                                    }
+                                ]
+                            },
+                            "value": [
+                                {
+                                    "language": "de",
+                                    "text": "DE"
+                                }
+                            ]
+                        },
+                        {
+                            "idShort": "Language01",
+                            "category": "PARAMETER",
+                            "description": [
+                                {
+                                    "language": "en",
+                                    "text": "Available language. Note: language codes defined accord. to ISO 639-1. Note:\n                                        as per ECLASS definition, Expression and representation of thoughts,\n                                        information, feelings, ideas through characters.\n                                    "
+                                }
+                            ],
+                            "modelType": "Property",
+                            "semanticId": {
+                                "type": "ExternalReference",
+                                "keys": [
+                                    {
+                                        "type": "GlobalReference",
+                                        "value": "\n                                            https://admin-shell.io/zvei/nameplate/1/0/ContactInformations/ContactInformation/Language\n                                        "
+                                    }
+                                ]
+                            },
+                            "value": "DE",
+                            "valueType": "xs:string"
+                        },
+                        {
+                            "idShort": "Language02",
+                            "category": "PARAMETER",
+                            "description": [
+                                {
+                                    "language": "en",
+                                    "text": "Available language. Note: language codes defined accord. to ISO 639-1. Note:\n                                        as per ECLASS definition, Expression and representation of thoughts,\n                                        information, feelings, ideas through characters.\n                                    "
+                                }
+                            ],
+                            "modelType": "Property",
+                            "semanticId": {
+                                "type": "ExternalReference",
+                                "keys": [
+                                    {
+                                        "type": "GlobalReference",
+                                        "value": "\n                                            https://admin-shell.io/zvei/nameplate/1/0/ContactInformations/ContactInformation/Language\n                                        "
+                                    }
+                                ]
+                            },
+                            "value": "EN",
+                            "valueType": "xs:string"
+                        },
+                        {
+                            "idShort": "CityTown",
+                            "category": "PARAMETER",
+                            "description": [
+                                {
+                                    "language": "en",
+                                    "text": "town or city."
+                                }
+                            ],
+                            "modelType": "MultiLanguageProperty",
+                            "semanticId": {
+                                "type": "ExternalReference",
+                                "keys": [
+                                    {
+                                        "type": "GlobalReference",
+                                        "value": "0173-1#02-AAO132#002"
+                                    }
+                                ]
+                            },
+                            "value": [
+                                {
+                                    "language": "de",
+                                    "text": "Igersheim-Harthausen"
+                                }
+                            ]
+                        },
+                        {
+                            "idShort": "Company",
+                            "category": "PARAMETER",
+                            "description": [
+                                {
+                                    "language": "en",
+                                    "text": "name of the company"
+                                }
+                            ],
+                            "modelType": "MultiLanguageProperty",
+                            "semanticId": {
+                                "type": "ExternalReference",
+                                "keys": [
+                                    {
+                                        "type": "GlobalReference",
+                                        "value": "0173-1#02-AAW001#001"
+                                    }
+                                ]
+                            },
+                            "value": [
+                                {
+                                    "language": "de",
+                                    "text": "WITTENSTEIN SE"
+                                }
+                            ]
+                        },
+                        {
+                            "idShort": "Department",
+                            "category": "PARAMETER",
+                            "description": [
+                                {
+                                    "language": "en",
+                                    "text": "administrative section within an organisation where a business partner is\n                                        located\n                                    "
+                                }
+                            ],
+                            "modelType": "MultiLanguageProperty",
+                            "semanticId": {
+                                "type": "ExternalReference",
+                                "keys": [
+                                    {
+                                        "type": "GlobalReference",
+                                        "value": "0173-1#02-AAO127#003"
+                                    }
+                                ]
+                            },
+                            "value": [
+                                {
+                                    "language": "de",
+                                    "text": "Research & Innovation"
+                                },
+                                {
+                                    "language": "en",
+                                    "text": "Research & Innovation"
+                                }
+                            ]
+                        },
+                        {
+                            "idShort": "Email",
+                            "description": [
+                                {
+                                    "language": "en",
+                                    "text": "E-mail address and encryption method"
+                                }
+                            ],
+                            "modelType": "SubmodelElementCollection",
+                            "semanticId": {
+                                "type": "ExternalReference",
+                                "keys": [
+                                    {
+                                        "type": "GlobalReference",
+                                        "value": "0173-1#02-AAQ836#005"
+                                    }
+                                ]
+                            },
+                            "value": [
+                                {
+                                    "idShort": "EmailAddress",
+                                    "category": "PARAMETER",
+                                    "description": [
+                                        {
+                                            "language": "en",
+                                            "text": "electronic mail address of a business partner"
+                                        }
+                                    ],
+                                    "modelType": "Property",
+                                    "semanticId": {
+                                        "type": "ExternalReference",
+                                        "keys": [
+                                            {
+                                                "type": "GlobalReference",
+                                                "value": "0173-1#02-AAO198#002"
+                                            }
+                                        ]
+                                    },
+                                    "value": "cybertronic-support@wittenstein.de",
+                                    "valueType": "xs:string"
+                                }
+                            ]
+                        },
+                        {
+                            "idShort": "Street",
+                            "category": "PARAMETER",
+                            "description": [
+                                {
+                                    "language": "en",
+                                    "text": "street name and house number"
+                                }
+                            ],
+                            "modelType": "MultiLanguageProperty",
+                            "semanticId": {
+                                "type": "ExternalReference",
+                                "keys": [
+                                    {
+                                        "type": "GlobalReference",
+                                        "value": "0173-1#02-AAO128#002"
+                                    }
+                                ]
+                            },
+                            "value": [
+                                {
+                                    "language": "de",
+                                    "text": "Walter-Wittenstein-Str. 1"
+                                },
+                                {
+                                    "language": "en",
+                                    "text": "Walter-Wittenstein-Str. 1"
+                                }
+                            ]
+                        },
+                        {
+                            "idShort": "Zipcode",
+                            "category": "PARAMETER",
+                            "description": [
+                                {
+                                    "language": "en",
+                                    "text": "ZIP code of address"
+                                }
+                            ],
+                            "modelType": "MultiLanguageProperty",
+                            "semanticId": {
+                                "type": "ExternalReference",
+                                "keys": [
+                                    {
+                                        "type": "GlobalReference",
+                                        "value": "0173-1#02-AAO129#002"
+                                    }
+                                ]
+                            },
+                            "value": [
+                                {
+                                    "language": "de",
+                                    "text": "97999"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "idShort": "HealthIndex",
+            "modelType": "Submodel",
+            "id": "https://wgrp.biz/sm/healthindex/1/0/xNA7mRX",
+            "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                    {
+                        "type": "GlobalReference",
+                        "value": "https://wgrp.biz/sm/healthindex/1/0"
+                    }
+                ]
+            },
+            "submodelElements": [
+                {
+                    "idShort": "LastUpdatedTimestamp",
+                    "modelType": "Property",
+                    "semanticId": {
+                        "type": "ExternalReference",
+                        "keys": [
+                            {
+                                "type": "GlobalReference",
+                                "value": "https://wgrp.biz/sm/healthindex/1/0/lastupdatedtimestamp"
+                            }
+                        ]
+                    },
+                    "value": "2025-08-08T05:36:47.344165+00:00",
+                    "valueType": "xs:dateTime"
+                },
+                {
+                    "idShort": "CurrentState",
+                    "modelType": "Property",
+                    "semanticId": {
+                        "type": "ExternalReference",
+                        "keys": [
+                            {
+                                "type": "GlobalReference",
+                                "value": "https://wgrp.biz/sm/healthindex/1/0/currentstate"
+                            }
+                        ]
+                    },
+                    "value": "https://wgrp.biz/sm/healthindex/1/0/conditionstate/ok",
+                    "valueType": "xs:string"
+                },
+                {
+                    "idShort": "StateTransitions",
+                    "modelType": "SubmodelElementList",
+                    "semanticId": {
+                        "type": "ExternalReference",
+                        "keys": [
+                            {
+                                "type": "GlobalReference",
+                                "value": "https://wgrp.biz/sm/healthindex/1/0/statetransitions"
+                            }
+                        ]
+                    },
+                    "orderRelevant": true,
+                    "typeValueListElement": "SubmodelElement",
+                    "semanticIdListElement": {
+                        "type": "ExternalReference",
+                        "keys": [
+                            {
+                                "type": "GlobalReference",
+                                "value": "https://wgrp.biz/sm/healthindex/1/0/statetransition"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "idShort": "TechnicalInfoVersion",
+                    "modelType": "Property",
+                    "semanticId": {
+                        "type": "ExternalReference",
+                        "keys": [
+                            {
+                                "type": "GlobalReference",
+                                "value": "https://wgrp.biz/sm/healthindex/1/0/technicalinfoversion"
+                            }
+                        ]
+                    },
+                    "value": "1",
+                    "valueType": "xs:int"
+                },
+                {
+                    "idShort": "TechnicalInfo",
+                    "modelType": "Property",
+                    "semanticId": {
+                        "type": "ExternalReference",
+                        "keys": [
+                            {
+                                "type": "GlobalReference",
+                                "value": "https://wgrp.biz/sm/healthindex/1/0/technicalinfo"
+                            }
+                        ]
+                    },
+                    "value": "\n                        AAEAAH2A81GgNQKRlUgy5gqpMtVGJ4i5XUKmJc+muJ54xuTrK6CMG3BoPcKaXB+W5HkSfKk0jdSJ2XoGyD0NpMy07+FsTPSH2FN9SwlFjc3BvTSzRzz5GyJP8//q9mpYj6ULG3vTbNK8qh3oD5gJbrq45Yh+YxBjBuJ1gWN9eUJwkg15fQzfkaGxh+9k+oj1xS9PNkhrSmMA7ZA2+p4or/IbEZXE3IeuEXCMZ7PU5u8n8qasCkUnXpRVlWfU3Xfpf/Rj9fNaik7FqDXq6/0EODW+JkZ+U79a0S8dx9Bav3+DJ4JHg5GClE5g/Yk9qROEK10/vkoYu3Z5M5RXA5e+N+i90GkAAQAAYV9VwnQ71f4H8SOVboUXRAmq0mqrgTsy+3zVBL5IKj0jB3UANdZw3uuvxFC0DzX0RFukmy2Ioq1mogl/vGwJkRU8DPk2fEOEzRfcMN3gByEuDurMTvVmG59Rutw7No0Ge2SJIZgsnwB6TZQ5PvPDSHNqrgkaezrRvz1iYdnJP+e5a2TaR4clos4o6FigNVelhqrHG1t8YFgnjnSHPpRVLkwx1UdEgCdDWB9Cg3sm0rVh6vdAjGILrmIeBD8TkbX3B+HB+y1Xf52d21GcG8s2gZWTHoZ19mF6IFfb58wSMFquGuggnbnmV2HRwpYDIil1KNl8EyEtjN7/ZvUCyrdy+hHMiruV0/SOZ2ow4I0/d1Uej+ThrKg4PiybzQ99YpJVs6htpBWPSUxYWot0uq4SVA2hKvlUc7DCaCLbSIG42fH/nEPqN2RjD2v5qbN32HAlMijbSOTx+h7n8MVLYBuW1OVi0+SQxz5YZZj06IbGicQZko5LnYR1S5h3k3+/sNKvgid/MyTzA4MaQyW+EhR2PqMT54eTuaVg6vp8HS7ab8uw2iT+FtV9ZMl3fZ2Lpp7G/TfUQPQjbsjGrrnHTj+lEcQ40WKiE5Ryd4zIJm/V9zncrIszRv/5Sr6BxaxE34/FThOL0BM7hDJ/QlUdYD6N00x0xL8QtkDPrF1KvaHDYD3p3LdS0UuJ+OTfd2y73Z0C0Whnx50Egyzy+AaZ8bOJ7XH58rzjv/oi/JbUcRnCaSXZ2MaNcTvABcnbGoaBijTMXZ0bRdGqrzRc4piemKt2JYOdboDqDJDodiHluzczu7NcbZKSFCB6lb0OkyVRA+zH76ByjLvgiVYzHQhnmOt1N5onB3kserHuMXC+YAyhCLxDGDArQYFRioVWgNJPup8KFdt7HBbODzzwvi99D6qEfrfNlhjsTTxytqUQM6O3aL3poEbTBzxarQLvL9pZjYF/ZnExbenmhjd9dKrAQJukQtcQwMgsxxruNVn/zz194fbJ95zML7FCHYMjESpsOMSOHFBLFm8Y4XuL0/Z7pF0GBrl8c49POM8apJQ91JEi5V6jlV+eBFwSmjvQF8bZ98TDIKp3t8oGiw8yzpFmrKq2n02PQ5KAAIlmXuTwBcSWlvAMc7dUTm3jBQc0kRMm84kZQ82pkji2cF2OlgJRiMcL1Jfd9meCcTVRSuh4wipOU3aBuwf7eTc453BZmek4RYsiZLQJkANLoOKwtRL2RwyfxZBvVjtaNTa5E8+H8ws/fCWb6HMgizEPfkK1NLJbmxNhPn7FbwTjObHtmsbyFBSq6ePcGxJEj+x67ds5BD+64QgH9t0JRYcI3lZfP8+hKg89hx1dSSzfCLpuURMB9ZyElFFs6AgvkaiMAtT98DuJ3nhwhz0Nc/izeQHm3oZwx55shb7aFYfg/VTZDdaPhrER2dXvUtayTRv3Zl2gXMxTetP3Pfip+m0t301P2ZbtgUpC9XrSDl6QBNWpJB3bCzCAXVnBP55GXnk1gcmMqM78OdtV1YoQYa8+yuhiNpiqTBSNnq2/XhYwu3Yd4vGCMwKs7tn3r8zJow7ssDSFFUJJ2XwpJjRTGaBlemBQqgPyisd0KXzvb9DH1sC0nwuKCKREYy5lStMP//4EEOHdRZaDhcHVqzO3wMFbcCJRe8V8fhdg+dgkX/iF7hCSXM9INe+zyQTA8vBqYHAAD7ywiKliL3mbOaxgW/EWDd/ciq7k0xn3NR2A2isARODGCvI/uyC7DA==\n                    ",
+                    "valueType": "xs:string"
+                }
+            ]
+        },
+        {
+            "idShort": "TimeSeries",
+            "description": [
+                {
+                    "language": "de",
+                    "text": "Enth\u00e4lt Zeitreihendaten und Referenzen auf Zeitreihendaten, um diese entlang des Asset Lebenszyklus aufzufinden und semantisch zu beschreiben."
+                },
+                {
+                    "language": "en",
+                    "text": "Contains time series data and references to time series data to discover and semantically describe them along the asset lifecycle."
+                }
+            ],
+            "modelType": "Submodel",
+            "id": "https://admin-shell.io/idta/TimeSeries/1/1",
+            "administration": {
+                "version": "1",
+                "revision": "1"
+            },
+            "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                    {
+                        "type": "GlobalReference",
+                        "value": "https://admin-shell.io/idta/TimeSeries/1/1"
+                    }
+                ]
+            },
+            "kind": "Template",
+            "submodelElements": [
+                {
+                    "idShort": "Metadata",
+                    "modelType": "SubmodelElementCollection",
+                    "semanticId": {
+                        "type": "ExternalReference",
+                        "keys": [
+                            {
+                                "type": "GlobalReference",
+                                "value": "https://admin-shell.io/idta/TimeSeries/Metadata/1/1"
+                            }
+                        ]
+                    },
+                    "qualifiers": [
+                        {
+                            "value": "One",
+                            "kind": "ConceptQualifier",
+                            "valueType": "xs:string",
+                            "type": "Cardinality"
+                        }
+                    ],
+                    "value": [
+                        {
+                            "idShort": "Name",
+                            "category": "PARAMETER",
+                            "modelType": "MultiLanguageProperty",
+                            "semanticId": {
+                                "type": "ExternalReference",
+                                "keys": [
+                                    {
+                                        "type": "GlobalReference",
+                                        "value": "https://admin-shell.io/idta/TimeSeries/Metadata/Name/1/1"
+                                    }
+                                ]
+                            },
+                            "qualifiers": [
+                                {
+                                    "value": "One",
+                                    "kind": "ConceptQualifier",
+                                    "valueType": "xs:string",
+                                    "type": "Cardinality"
+                                }
+                            ],
+                            "value": [
+                                {
+                                    "language": "de",
+                                    "text": "cynapse Blob Transfer"
+                                }
+                            ]
+                        },
+                        {
+                            "idShort": "Description",
+                            "category": "PARAMETER",
+                            "modelType": "MultiLanguageProperty",
+                            "semanticId": {
+                                "type": "ExternalReference",
+                                "keys": [
+                                    {
+                                        "type": "GlobalReference",
+                                        "value": "https://admin-shell.io/idta/TimeSeries/Metadata/Description/1/1"
+                                    }
+                                ]
+                            },
+                            "qualifiers": [
+                                {
+                                    "value": "ZeroToOne",
+                                    "kind": "ConceptQualifier",
+                                    "valueType": "xs:string",
+                                    "type": "Cardinality"
+                                }
+                            ]
+                        },
+                        {
+                            "idShort": "Record",
+                            "modelType": "SubmodelElementCollection",
+                            "semanticId": {
+                                "type": "ExternalReference",
+                                "keys": [
+                                    {
+                                        "type": "GlobalReference",
+                                        "value": "https://admin-shell.io/idta/TimeSeries/Record/1/1"
+                                    }
+                                ]
+                            },
+                            "qualifiers": [
+                                {
+                                    "value": "One",
+                                    "kind": "ConceptQualifier",
+                                    "valueType": "xs:string",
+                                    "type": "Cardinality"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "idShort": "Segments",
+                    "modelType": "SubmodelElementCollection",
+                    "semanticId": {
+                        "type": "ExternalReference",
+                        "keys": [
+                            {
+                                "type": "GlobalReference",
+                                "value": "https://admin-shell.io/idta/TimeSeries/Segments/1/1"
+                            }
+                        ]
+                    },
+                    "qualifiers": [
+                        {
+                            "value": "One",
+                            "kind": "ConceptQualifier",
+                            "valueType": "xs:string",
+                            "type": "Cardinality"
+                        }
+                    ],
+                    "value": [
+                        {
+                            "idShort": "ExternalSegment",
+                            "modelType": "SubmodelElementCollection",
+                            "semanticId": {
+                                "type": "ExternalReference",
+                                "keys": [
+                                    {
+                                        "type": "GlobalReference",
+                                        "value": "https://admin-shell.io/idta/TimeSeries/Segments/ExternalSegment/1/1"
+                                    }
+                                ]
+                            },
+                            "qualifiers": [
+                                {
+                                    "value": "ZeroToMany",
+                                    "kind": "ConceptQualifier",
+                                    "valueType": "xs:string",
+                                    "type": "Cardinality"
+                                }
+                            ],
+                            "value": [
+                                {
+                                    "idShort": "Name",
+                                    "category": "PARAMETER",
+                                    "modelType": "MultiLanguageProperty",
+                                    "semanticId": {
+                                        "type": "ExternalReference",
+                                        "keys": [
+                                            {
+                                                "type": "GlobalReference",
+                                                "value": "https://admin-shell.io/idta/TimeSeries/Segment/Name/1/1"
+                                            }
+                                        ]
+                                    },
+                                    "qualifiers": [
+                                        {
+                                            "value": "ZeroToOne",
+                                            "kind": "ConceptQualifier",
+                                            "valueType": "xs:string",
+                                            "type": "Cardinality"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "idShort": "Description",
+                                    "category": "PARAMETER",
+                                    "modelType": "MultiLanguageProperty",
+                                    "semanticId": {
+                                        "type": "ExternalReference",
+                                        "keys": [
+                                            {
+                                                "type": "GlobalReference",
+                                                "value": "https://admin-shell.io/idta/TimeSeries/Segment/Description/1/1"
+                                            }
+                                        ]
+                                    },
+                                    "qualifiers": [
+                                        {
+                                            "value": "ZeroToOne",
+                                            "kind": "ConceptQualifier",
+                                            "valueType": "xs:string",
+                                            "type": "Cardinality"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "idShort": "RecordCount",
+                                    "category": "VARIABLE",
+                                    "modelType": "Property",
+                                    "semanticId": {
+                                        "type": "ExternalReference",
+                                        "keys": [
+                                            {
+                                                "type": "GlobalReference",
+                                                "value": "https://admin-shell.io/idta/TimeSeries/Segment/RecordCount/1/1"
+                                            }
+                                        ]
+                                    },
+                                    "qualifiers": [
+                                        {
+                                            "value": "ZeroToOne",
+                                            "kind": "ConceptQualifier",
+                                            "valueType": "xs:string",
+                                            "type": "Cardinality"
+                                        }
+                                    ],
+                                    "value": "80000",
+                                    "valueType": "xs:long"
+                                },
+                                {
+                                    "idShort": "StartTime",
+                                    "category": "VARIABLE",
+                                    "modelType": "Property",
+                                    "semanticId": {
+                                        "type": "ExternalReference",
+                                        "keys": [
+                                            {
+                                                "type": "GlobalReference",
+                                                "value": "https://admin-shell.io/idta/TimeSeries/Segment/StartTime/1/1"
+                                            }
+                                        ]
+                                    },
+                                    "qualifiers": [
+                                        {
+                                            "value": "ZeroToOne",
+                                            "kind": "ConceptQualifier",
+                                            "valueType": "xs:string",
+                                            "type": "Cardinality"
+                                        }
+                                    ],
+                                    "value": "2025-08-25T09:48:41Z",
+                                    "valueType": "xs:string"
+                                },
+                                {
+                                    "idShort": "EndTime",
+                                    "category": "VARIABLE",
+                                    "modelType": "Property",
+                                    "semanticId": {
+                                        "type": "ExternalReference",
+                                        "keys": [
+                                            {
+                                                "type": "GlobalReference",
+                                                "value": "https://admin-shell.io/idta/TimeSeries/Segment/EndTime/1/1 "
+                                            }
+                                        ]
+                                    },
+                                    "qualifiers": [
+                                        {
+                                            "value": "ZeroToOne",
+                                            "kind": "ConceptQualifier",
+                                            "valueType": "xs:string",
+                                            "type": "Cardinality"
+                                        }
+                                    ],
+                                    "value": "2025-08-25T09:48:51Z",
+                                    "valueType": "xs:string"
+                                },
+                                {
+                                    "idShort": "Duration",
+                                    "category": "VARIABLE",
+                                    "modelType": "Property",
+                                    "semanticId": {
+                                        "type": "ExternalReference",
+                                        "keys": [
+                                            {
+                                                "type": "GlobalReference",
+                                                "value": "https://admin-shell.io/idta/TimeSeries/Segment/Duration/1/1"
+                                            }
+                                        ]
+                                    },
+                                    "qualifiers": [
+                                        {
+                                            "value": "ZeroToOne",
+                                            "kind": "ConceptQualifier",
+                                            "valueType": "xs:string",
+                                            "type": "Cardinality"
+                                        }
+                                    ],
+                                    "value": "",
+                                    "valueType": "xs:string"
+                                },
+                                {
+                                    "idShort": "SamplingRate",
+                                    "category": "PARAMETER",
+                                    "modelType": "Property",
+                                    "semanticId": {
+                                        "type": "ExternalReference",
+                                        "keys": [
+                                            {
+                                                "type": "GlobalReference",
+                                                "value": "https://admin-shell.io/idta/TimeSeries/Segment/SamplingRate/1/1"
+                                            }
+                                        ]
+                                    },
+                                    "qualifiers": [
+                                        {
+                                            "value": "ZeroToOne",
+                                            "kind": "ConceptQualifier",
+                                            "valueType": "xs:string",
+                                            "type": "Cardinality"
+                                        }
+                                    ],
+                                    "value": "8000",
+                                    "valueType": "xs:long"
+                                },
+                                {
+                                    "idShort": "State",
+                                    "category": "PARAMETER",
+                                    "modelType": "Property",
+                                    "semanticId": {
+                                        "type": "ExternalReference",
+                                        "keys": [
+                                            {
+                                                "type": "GlobalReference",
+                                                "value": "https://admin-shell.io/idta/TimeSeries/Segment/State/1/1"
+                                            }
+                                        ]
+                                    },
+                                    "qualifiers": [
+                                        {
+                                            "value": "ZeroToOne",
+                                            "kind": "ConceptQualifier",
+                                            "valueType": "xs:string",
+                                            "type": "Cardinality"
+                                        }
+                                    ],
+                                    "value": "completed",
+                                    "valueType": "xs:string"
+                                },
+                                {
+                                    "idShort": "LastUpdate",
+                                    "category": "VARIABLE",
+                                    "modelType": "Property",
+                                    "semanticId": {
+                                        "type": "ExternalReference",
+                                        "keys": [
+                                            {
+                                                "type": "GlobalReference",
+                                                "value": "https://admin-shell.io/idta/TimeSeries/Segment/LastUpdate/1/1"
+                                            }
+                                        ]
+                                    },
+                                    "qualifiers": [
+                                        {
+                                            "value": "ZeroToOne",
+                                            "kind": "ConceptQualifier",
+                                            "valueType": "xs:string",
+                                            "type": "Cardinality"
+                                        }
+                                    ],
+                                    "value": "2025-08-25T09:49:41Z",
+                                    "valueType": "xs:string"
+                                },
+                                {
+                                    "idShort": "Blob",
+                                    "category": "VARIABLE",
+                                    "modelType": "Blob",
+                                    "semanticId": {
+                                        "type": "ExternalReference",
+                                        "keys": [
+                                            {
+                                                "type": "GlobalReference",
+                                                "value": "https://admin-shell.io/idta/TimeSeries/Blob/1/1"
+                                            }
+                                        ]
+                                    },
+                                    "qualifiers": [
+                                        {
+                                            "value": "ZeroToOne",
+                                            "kind": "ConceptQualifier",
+                                            "valueType": "xs:string",
+                                            "type": "Cardinality"
+                                        }
+                                    ],
+                                    "contentType": "text/plain"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "conceptDescriptions": [
+        {
+            "idShort": "Metadata",
+            "modelType": "ConceptDescription",
+            "id": "https://admin-shell.io/idta/TimeSeries/Metadata/1/1",
+            "administration": {
+                "version": "1",
+                "revision": "1"
+            }
+        },
+        {
+            "idShort": "Name",
+            "modelType": "ConceptDescription",
+            "id": "https://admin-shell.io/idta/TimeSeries/Metadata/Name/1/1",
+            "administration": {
+                "version": "1",
+                "revision": "1"
+            }
+        },
+        {
+            "idShort": "Description",
+            "modelType": "ConceptDescription",
+            "id": "https://admin-shell.io/idta/TimeSeries/Metadata/Description/1/1",
+            "administration": {
+                "version": "1",
+                "revision": "1"
+            }
+        },
+        {
+            "idShort": "Record",
+            "modelType": "ConceptDescription",
+            "id": "https://admin-shell.io/idta/TimeSeries/Record/1/1",
+            "administration": {
+                "version": "1",
+                "revision": "1"
+            }
+        },
+        {
+            "idShort": "RelativeTimePoint",
+            "modelType": "ConceptDescription",
+            "id": "https://admin-shell.io/idta/TimeSeries/RelativePointInTime/1/1",
+            "administration": {
+                "version": "1",
+                "revision": "1"
+            }
+        },
+        {
+            "embeddedDataSpecifications": [
+                {
+                    "dataSpecification": {
+                        "type": "ExternalReference",
+                        "keys": [
+                            {
+                                "type": "GlobalReference",
+                                "value": "http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIEC61360/3/0"
+                            }
+                        ]
+                    },
+                    "dataSpecificationContent": {
+                        "modelType": "DataSpecificationIec61360",
+                        "preferredName": [
+                            {
+                                "language": "de",
+                                "text": "Zeitreihensegmente"
+                            },
+                            {
+                                "language": "en",
+                                "text": "time series segments"
+                            }
+                        ],
+                        "definition": [
+                            {
+                                "language": "de",
+                                "text": "Enth\u00e4lt Segmente einer Zeitreihe"
+                            },
+                            {
+                                "language": "en",
+                                "text": "Contains segments of a time series"
+                            }
+                        ],
+                        "shortName": [
+                            {
+                                "language": "de",
+                                "text": "Segmente"
+                            },
+                            {
+                                "language": "en",
+                                "text": "segments"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "idShort": "Segments",
+            "modelType": "ConceptDescription",
+            "id": "https://admin-shell.io/idta/TimeSeries/Segments/1/1",
+            "administration": {
+                "version": "1",
+                "revision": "1"
+            }
+        },
+        {
+            "idShort": "ExternalSegment",
+            "modelType": "ConceptDescription",
+            "id": "https://admin-shell.io/idta/TimeSeries/Segments/ExternalSegment/1/1",
+            "administration": {
+                "version": "1",
+                "revision": "1"
+            }
+        },
+        {
+            "idShort": "Name",
+            "modelType": "ConceptDescription",
+            "id": "https://admin-shell.io/idta/TimeSeries/Segment/Name/1/1",
+            "administration": {
+                "version": "1",
+                "revision": "1"
+            }
+        },
+        {
+            "idShort": "Description",
+            "modelType": "ConceptDescription",
+            "id": "https://admin-shell.io/idta/TimeSeries/Segment/Description/1/1",
+            "administration": {
+                "version": "1",
+                "revision": "1"
+            }
+        },
+        {
+            "idShort": "RecordCount",
+            "modelType": "ConceptDescription",
+            "id": "https://admin-shell.io/idta/TimeSeries/Segment/RecordCount/1/1",
+            "administration": {
+                "version": "1",
+                "revision": "1"
+            }
+        },
+        {
+            "idShort": "StartTime",
+            "modelType": "ConceptDescription",
+            "id": "https://admin-shell.io/idta/TimeSeries/Segment/StartTime/1/1",
+            "administration": {
+                "version": "1",
+                "revision": "1"
+            }
+        },
+        {
+            "embeddedDataSpecifications": [
+                {
+                    "dataSpecification": {
+                        "type": "ExternalReference",
+                        "keys": [
+                            {
+                                "type": "GlobalReference",
+                                "value": "http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIEC61360/3/0"
+                            }
+                        ]
+                    },
+                    "dataSpecificationContent": {
+                        "modelType": "DataSpecificationIec61360",
+                        "preferredName": [
+                            {
+                                "language": "de",
+                                "text": "Dauer"
+                            },
+                            {
+                                "language": "en",
+                                "text": "duration"
+                            }
+                        ],
+                        "definition": [
+                            {
+                                "language": "de",
+                                "text": "Zeitraum den das Segment umfasst, dargestellt nach ISO 8601 durch das Format P[n]Y[n]M[n]DT[n]H[n]M[n]S"
+                            },
+                            {
+                                "language": "en",
+                                "text": "Period covered by the segment, represented according to ISO 8601 by the format P[n]Y[n]M[n]DT[n]H[n]M[n]S"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "idShort": "Duration",
+            "modelType": "ConceptDescription",
+            "id": "https://admin-shell.io/idta/TimeSeries/Segment/Duration/1/1",
+            "administration": {
+                "version": "1",
+                "revision": "1"
+            }
+        },
+        {
+            "idShort": "SamplingInterval",
+            "modelType": "ConceptDescription",
+            "id": "https://admin-shell.io/idta/TimeSeries/Segment/SamplingInterval/1/1",
+            "administration": {
+                "version": "1",
+                "revision": "1"
+            }
+        },
+        {
+            "idShort": "SamplingRate",
+            "modelType": "ConceptDescription",
+            "id": "https://admin-shell.io/idta/TimeSeries/Segment/SamplingRate/1/1",
+            "administration": {
+                "version": "1",
+                "revision": "1"
+            }
+        },
+        {
+            "embeddedDataSpecifications": [
+                {
+                    "dataSpecification": {
+                        "type": "ExternalReference",
+                        "keys": [
+                            {
+                                "type": "GlobalReference",
+                                "value": "http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIEC61360/3/0"
+                            }
+                        ]
+                    },
+                    "dataSpecificationContent": {
+                        "modelType": "DataSpecificationIec61360",
+                        "preferredName": [
+                            {
+                                "language": "de",
+                                "text": "Status"
+                            },
+                            {
+                                "language": "en",
+                                "text": "State"
+                            }
+                        ],
+                        "definition": [
+                            {
+                                "language": "de",
+                                "text": "Zustand der Zeitreihe bezogen auf ihren Fortschritt"
+                            },
+                            {
+                                "language": "en",
+                                "text": "State of the time series related to its progress"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "idShort": "State",
+            "modelType": "ConceptDescription",
+            "id": "https://admin-shell.io/idta/TimeSeries/Segment/State/1/1",
+            "administration": {
+                "version": "1",
+                "revision": "1"
+            }
+        },
+        {
+            "embeddedDataSpecifications": [
+                {
+                    "dataSpecification": {
+                        "type": "ExternalReference",
+                        "keys": [
+                            {
+                                "type": "GlobalReference",
+                                "value": "http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIEC61360/3/0"
+                            }
+                        ]
+                    },
+                    "dataSpecificationContent": {
+                        "modelType": "DataSpecificationIec61360",
+                        "preferredName": [
+                            {
+                                "language": "de",
+                                "text": "Letzte Aktualisierung"
+                            },
+                            {
+                                "language": "en",
+                                "text": "Last update"
+                            }
+                        ],
+                        "definition": [
+                            {
+                                "language": "de",
+                                "text": "Zeitpunkt der letzten Ver\u00e4nderung"
+                            },
+                            {
+                                "language": "en",
+                                "text": "Time of the last chance"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "idShort": "LastUpdate",
+            "modelType": "ConceptDescription",
+            "id": "https://admin-shell.io/idta/TimeSeries/Segment/LastUpdate/1/1",
+            "administration": {
+                "version": "1",
+                "revision": "1"
+            }
+        },
+        {
+            "embeddedDataSpecifications": [
+                {
+                    "dataSpecification": {
+                        "type": "ExternalReference",
+                        "keys": [
+                            {
+                                "type": "GlobalReference",
+                                "value": "http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIEC61360/3/0"
+                            }
+                        ]
+                    },
+                    "dataSpecificationContent": {
+                        "modelType": "DataSpecificationIec61360",
+                        "preferredName": [
+                            {
+                                "language": "de",
+                                "text": "Zeitreihen Blob"
+                            },
+                            {
+                                "language": "en",
+                                "text": "time series Blob"
+                            }
+                        ],
+                        "definition": [
+                            {
+                                "language": "de",
+                                "text": "Abfolge von Datenpunkten in aufeinanderfolgender Reihenfolge \u00fcber einen bestimmten Zeitraum innerhalb eines BLOBs"
+                            },
+                            {
+                                "language": "en",
+                                "text": "Sequence of data points in sequential order over a period of time within a BLOB"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "idShort": "Blob",
+            "modelType": "ConceptDescription",
+            "id": "https://admin-shell.io/idta/TimeSeries/Blob/1/1",
+            "administration": {
+                "version": "1",
+                "revision": "1"
+            }
+        }
+    ]
+}
