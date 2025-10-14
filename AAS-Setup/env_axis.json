@@ -290,7 +290,7 @@
                     "keys": [
                         {
                             "type": "Submodel",
-                            "value": "https://admin-shell.io/idta/TimeSeries/1/1"
+                            "value": "https://wgrp.biz/sm/blob/1/0/xNA7mRX"
                         }
                     ]
                 }
@@ -1871,7 +1871,7 @@
                 }
             ],
             "modelType": "Submodel",
-            "id": "https://admin-shell.io/idta/TimeSeries/1/1",
+            "id": "https://wgrp.biz/sm/blob/1/0/xNA7mRX",
             "administration": {
                 "version": "1",
                 "revision": "1"
