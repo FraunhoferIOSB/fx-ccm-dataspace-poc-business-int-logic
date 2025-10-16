@@ -7,6 +7,8 @@ import io
 from typing import List
 import uuid
 import httpx
+import os
+import logging
 
 # helpers:
 from app.datamodels import DemoDataModel, MachineReading, SensorReading
@@ -14,9 +16,14 @@ from app.routes.utils import get_submodel_element_blob_template, \
     encode_dict_to_b64
 timeout = 5.0  # seconds
 headers = {"Content-Type": "application/json", "Accept": "application/json"}
-base_url = "http://<<<address>>>:8000/api/v3.0/submodels/"
-url_motor = f'{base_url}dXJuOmh0dHBzOi8vdHJ1bXBmLmNvbS9hYXMvc3VibW9kZWwvVGltZVNlcmllcy9Nb3Rvci8wbTAxLzIzNA==/submodel-elements/Segments'
-url_getriebe = f'{base_url}aHR0cHM6Ly9hZG1pbi1zaGVsbC5pby9pZHRhL1RpbWVTZXJpZXMvMS8x/submodel-elements/'
+AAS_SERVER_NETWORK_URL = os.getenv("AAS_SERVER_NETWORK_URL")
+if AAS_SERVER_NETWORK_URL is None:
+    base_url = "http://<<<address>>>:8000/api/v3.0/"
+else:
+    base_url = AAS_SERVER_NETWORK_URL
+
+url_motor = f'{base_url}submodels/dXJuOmh0dHBzOi8vdHJ1bXBmLmNvbS9hYXMvc3VibW9kZWwvVGltZVNlcmllcy9Nb3Rvci8wbTAxLzIzNA==/submodel-elements/Segments'
+url_getriebe = f'{base_url}submodels/aHR0cHM6Ly93Z3JwLmJpei9zbS9ibG9iLzEvMC94TkE3bVJY/submodel-elements/'
 
 # custom router:
 router = APIRouter(prefix='/transfer', tags=['transfer', 'aas', 'aas_transfer'])
@@ -71,6 +78,7 @@ async def upload_blob_to_AAS(request: Request):
 
     # = load data into the AAS-Server =
     # POST motor data
+    logging.info(f"{url_motor}")
     try:
         async with httpx.AsyncClient(timeout=timeout) as client:
             motor_response = await client.post(

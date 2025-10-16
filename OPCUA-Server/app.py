@@ -138,5 +138,7 @@ async def main():
 if __name__ == "__main__":
     #logging.basicConfig(level=logging.DEBUG)
     logging.basicConfig(level=logging.WARNING)
+    _logger.setLevel(logging.WARNING)
     asyncio.run(main(), debug=False)
+    
     

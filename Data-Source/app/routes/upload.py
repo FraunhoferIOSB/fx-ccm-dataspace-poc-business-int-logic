@@ -5,6 +5,7 @@ from datetime import datetime
 import pandas as pd  # type: ignore
 import io
 from typing import List
+import logging
 
 # helpers:
 from app.routes.utils import bitshiftSensors
@@ -112,4 +113,6 @@ async def upload_data_csv(
         # store dedicated datapoints (only latest for now)
         request.app.state.latest_machine_reading = latest_machine_reading
         request.app.state.latest_sensor_reading = latest_sensor_reading
+
+    logging.info(f"CSV uploaded: {file.filename}, entries: {len(data.timestamps)}")
     return

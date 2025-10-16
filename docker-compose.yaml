@@ -9,6 +9,8 @@ services:
       - MX-Adapter-network
     volumes: 
       - MX-Adapter-volume:/fx
+    environment:
+      - AAS_SERVER_NETWORK_URL=http://z0008a0043.sfh.edge-device.net/faaast/api/v3.0/
 
   OPCUA-Server:
     image: opcua-server-image
@@ -22,18 +24,6 @@ services:
       - MX-Adapter-volume:/fx
     environment:
       - DATA_SOURCE_NETWORK_URL=http://MX-Adapter-Data-Source:8000
-
-  Blob-Converter:
-    image: blob-converter-image
-    container_name: MX-Adapter-Blob-Converter
-    restart: always
-    networks:
-      - MX-Adapter-network
-    volumes: 
-      - MX-Adapter-volume:/fx
-    environment:
-      - DATA_SOURCE_NETWORK_URL=http://MX-Adapter-Data-Source:8000
-
 
 networks:
   MX-Adapter-network:

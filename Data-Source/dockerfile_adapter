@@ -9,7 +9,7 @@ FROM python:3.11-slim
 ENV APP_HOME="/fx/Data-Source"
 
 
-# working directory for te container
+# working directory for the container
 WORKDIR ${APP_HOME}
 
 # Install requirements
