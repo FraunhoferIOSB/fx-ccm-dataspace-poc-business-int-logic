@@ -11,6 +11,8 @@ services:
       - MX-Adapter-volume:/fx
     environment:
       - AAS_SERVER_NETWORK_URL=http://z0008a0043.sfh.edge-device.net/faaast/api/v3.0/
+      #https://app-aascore-dev-we-004.azurewebsites.net/
+      #http://z0008a0043.sfh.edge-device.net/faaast/api/v3.0/
 
   OPCUA-Server:
     image: opcua-server-image

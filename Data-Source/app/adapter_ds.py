@@ -1,6 +1,15 @@
 from fastapi import FastAPI
 import logging
 
+# === Logging Configuration ===
+logging.basicConfig(level=logging.INFO)
+logging.getLogger("uvicorn").setLevel(logging.INFO)
+logging.getLogger("uvicorn.access").setLevel(logging.WARNING)
+logging.getLogger("fastapi").setLevel(logging.INFO)
+
+
+
+
 # custom routing:
 from app.routes import GenRouter, GetRouter, UploadRouter, \
     AASTransferRouter
@@ -41,8 +50,4 @@ app.include_router(GetRouter, prefix="/fx")
 app.include_router(UploadRouter, prefix="/fx")
 app.include_router(AASTransferRouter, prefix="/fx")
 
-
-logging.basicConfig(level=logging.INFO)
-logging.getLogger("uvicorn").setLevel(logging.WARNING)
-logging.getLogger("uvicorn.access").setLevel(logging.WARNING)
-logging.getLogger("fastapi").setLevel(logging.WARNING)
+logging.info(f"logging test from app: {app.title}, version: {app.version}")

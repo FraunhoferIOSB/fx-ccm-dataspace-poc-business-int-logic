@@ -22,7 +22,7 @@ async def upload_data_csv(
         file: UploadFile = File(..., description="demo .csv"),
         ):
     """
-    Endpoint to uplaod DEEPbox files.
+    Endpoint to upload DEEPbox files.
     This function parses the DEEPbox file and caches its contents.
     """
     # read data:
@@ -76,6 +76,7 @@ async def upload_data_csv(
         )
         currents = df_data.iloc[8:, -2].astype(float) * conversion_current
         speeds = df_data.iloc[8:, -1].astype(float) * conversion_speed
+        print(f"CSV Parsing successful: {file.filename}")
     except Exception as e:
         raise HTTPException(status_code=501,
                             detail=f"Dataframe Parsing Failed. {e}")

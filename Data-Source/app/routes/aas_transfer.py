@@ -15,7 +15,18 @@ from app.datamodels import DemoDataModel, MachineReading, SensorReading
 from app.routes.utils import get_submodel_element_blob_template, \
     encode_dict_to_b64
 timeout = 5.0  # seconds
-headers = {"Content-Type": "application/json", "Accept": "application/json"}
+
+try:
+    with open("/fx/secret-apikey", "r") as file:
+        apikey = file.read()
+        print("AAS-API Key loaded from secret file.")
+except Exception:
+    apikey  = ""
+logging.info(f"Apikey: {apikey}")
+headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+    "X-Api-Key": apikey}
 AAS_SERVER_NETWORK_URL = os.getenv("AAS_SERVER_NETWORK_URL")
 if AAS_SERVER_NETWORK_URL is None:
     base_url = "http://<<<address>>>:8000/api/v3.0/"
@@ -77,6 +88,7 @@ async def upload_blob_to_AAS(request: Request):
     sme_getriebe["value"] = encode_dict_to_b64(sme_value_getriebe)
 
     # = load data into the AAS-Server =
+
     # POST motor data
     logging.info(f"{url_motor}")
     try:
