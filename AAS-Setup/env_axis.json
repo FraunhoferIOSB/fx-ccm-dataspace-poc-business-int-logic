@@ -293,6 +293,15 @@
                             "value": "https://wgrp.biz/sm/blob/1/0/xdwayPN"
                         }
                     ]
+                },
+                {
+                    "type": "ModelReference",
+                    "keys": [
+                        {
+                            "type": "Submodel",
+                            "value": "https://wgrp.biz/sm/maintenancerecommendations/1/0/xdwayPN"
+                        }
+                    ]
                 }
             ]
         }
@@ -1885,7 +1894,7 @@
                     }
                 ]
             },
-            "kind": "Template",
+            "kind": "Instance",
             "submodelElements": [
                 {
                     "idShort": "Metadata",
@@ -2704,6 +2713,21 @@
                 "idShort": "CompanyLogo"
                 }
             ]
+        },
+        {
+            "idShort": "MaintenanceRecommendations",
+            "modelType": "Submodel",
+            "id": "https://wgrp.biz/sm/maintenancerecommendations/1/0/xdwayPN",
+            "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                    {
+                        "type": "GlobalReference",
+                        "value": "https://wgrp.biz/sm/maintenancerecommendations/1/0"
+                    }
+                ]
+            },
+            "submodelElements": []
         }
     ],
     "conceptDescriptions": [
